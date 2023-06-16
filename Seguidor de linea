@@ -1,0 +1,18 @@
+task main (){
+     int ncolor;
+     SetSensorColorFull(IN_3);
+
+     while (true){
+           ncolor= Sensor (IN_3);
+           switch (ncolor){
+           case 1:
+              OnFwd (OUT_BC,30);
+              Wait (100);
+              break;
+           case 6:
+              OnRev (OUT_B,30);
+              Wait (100);
+              break;
+              }
+           }
+     }
